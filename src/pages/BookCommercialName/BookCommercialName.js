@@ -38,13 +38,13 @@ const BookCommercialName = () => {
 
   return (
     <div className="commercial">
-        <div className="container">
+        <div className="container commercial__container">
             <div className="row">
                 <div className="col-12">
                     <Navbar></Navbar>
                     <div className="book-name bg-light p-25">
                     <div className="container">
-                        <section className="book-name__stepper-wrapper bg-white shadow-sm p-25">
+                        <section className="book-name__stepper-wrapper bg-white p-25">
                         <SectionHeader
                             title={"طلب حجز اسم تجارى"}
                             color={"#212529"}

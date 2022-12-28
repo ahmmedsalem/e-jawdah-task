@@ -1,5 +1,8 @@
+@import "../../../assets/sass/utils/variables.scss";
+
 .book-form {
     &__check {
+        width: 24%;
         input {
             &:checked + label {
                 font-weight: 700;
@@ -8,5 +11,39 @@
     }
     .form-select {
         width: 100%;
+    }
+}
+
+.record-card {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color: $main-bg;
+    &__header {
+        justify-content: space-between;
+    }
+    &__button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.card-example {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f7fe;
+    border: 2px dashed #bed0f9;
+    width: 100%;
+    padding: 20px;
+    p {
+        color: $secondary;
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #c2d4fe;
     }
 }

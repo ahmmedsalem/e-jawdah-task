@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
-import { addRecord } from "../../../redux/commercialsSlice";
+import { addRecord, deleteRecord } from "../../../redux/commercialsSlice";
 import "./BookForm.scss";
 
 const BookForm = (props) => {
@@ -33,6 +33,9 @@ const BookForm = (props) => {
 
   const addRecordHandler = (e) => {
     e.preventDefault();
+    if (enteredCommercialName.trim().length === 0) {
+      return
+    }
     const commercialRecord = {
       id: Math.random().toString(),
       type: enteredNameType,
@@ -42,7 +45,7 @@ const BookForm = (props) => {
     };
 
     dispatch(addRecord(commercialRecord))
-    
+
     setEnteredNameType("");
     setEnteredCommercialType("");
     setEnteredCommercialTypeFor("");
@@ -67,7 +70,7 @@ const BookForm = (props) => {
   return (
     <form
       onSubmit={submitHandler}
-      className="book-form bg-white mt-20 shadow-sm p-25"
+      className="book-form bg-white mt-20 p-25"
     >
       <SectionHeader title={"الاسم التجارى"} color={"#212529"}></SectionHeader>
 
@@ -77,7 +80,7 @@ const BookForm = (props) => {
         className="book-form__checkboxes d-flex mb-25"
         onChange={typeNameChangeHandler}
       >
-        <div className="form-check book-form__check p-20 w-25 border d-flex">
+        <div className="form-check book-form__check p-20 border d-flex">
           <input
             required
             className="form-check-input"
@@ -86,13 +89,13 @@ const BookForm = (props) => {
             id="flexRadioDefault1"
             value={"special"}
             checked={enteredNameType === "special"}
-            onChange={(e) => {}}
+            onChange={(e) => { }}
           />
           <label className="form-check-label me-30" htmlFor="flexRadioDefault1">
             اسم خاص
           </label>
         </div>
-        <div className="form-check book-form__check p-20 w-25 border d-flex me-20">
+        <div className="form-check book-form__check p-20 border d-flex me-20">
           <input
             required
             className="form-check-input"
@@ -101,7 +104,7 @@ const BookForm = (props) => {
             id="flexRadioDefault2"
             value={"recommended"}
             checked={enteredNameType === "recommended"}
-            onChange={(e) => {}}
+            onChange={(e) => { }}
           />
           <label className="form-check-label me-30" htmlFor="flexRadioDefault2">
             اسم مقترح
@@ -162,6 +165,27 @@ const BookForm = (props) => {
         </div>
       </div>
       <div className="row mt-15">
+        <div className="col-6">
+          <label className="fw-normal mb-15" htmlFor="commercialTypeFor">
+            مثال على شكل الأسم التجاري
+          </label>
+          <div className="card-example">
+            <div className="card-example__column">
+              <p>الكلمة السابقة</p>
+              <h2>مركز</h2>
+            </div>
+            <div className="card-example__column">
+              <p>اسم الكيان</p>
+              <h2>اسم مالك المشروع</h2>
+            </div>
+            <div className="card-example__column">
+              <p className="font-bold">الكلمة اللاحقة</p>
+              <h2>للتجارة</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row mt-15">
         <div className="col-3">
           <div className="book-form__commercial-type">
             <label className="fw-normal mb-10" htmlFor="commercialName">
@@ -181,28 +205,42 @@ const BookForm = (props) => {
           </div>
         </div>
         <div className="col-6 mt-33">
-          <button 
+          <button
             className="btn btn-outline-info btn-view"
             onClick={addRecordHandler}
           >
-            إضافة اسم 
+            <i className="bi bi-plus-lg m-5"></i>
+            إضافة اسم
           </button>
         </div>
       </div>
-      {recordsItems.length > 0 && 
-      recordsItems.map(item => <div className="card" key={item.id}>
-          <div className="card-body">
-            <div className="card-title">
-              {item.commercialName}
-            </div>
-            <p>
 
-            </p>
-          </div>
+      <div className="row">
+        {recordsItems.length > 0 &&
+          recordsItems.map(item =>
+            <div className="col-6" key={item.id}>
+              <div className="record-card p-15 py-20 my-15">
+                <div className="record-card__header d-flex">
+                  <p className="text-white">
+                    الأسم التجاري
+                  </p>
+                  <button 
+                    className="record-card__button text-white mt-0 p-0" 
+                    onClick={() => dispatch(deleteRecord({ id: item.id }))}
+                  >
+                    حذف
+                    <i className="bi bi-x-lg m-5"></i>
+                  </button>
+                </div>
+                <h5 className="record-card__content text-white">
+                  {item.commercialType} {item.commercialName} {item.commercialTypeFor}
+                </h5>
+              </div>
+            </div>
+          )
+        }
       </div>
-      )
-      }
-      
+
       <button className="btn btn-info btn-lg me-auto d-block" type="submit">
         التالى
       </button>

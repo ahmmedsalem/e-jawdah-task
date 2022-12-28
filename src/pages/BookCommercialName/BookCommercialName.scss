@@ -4,9 +4,18 @@
 @import "../../assets/sass/utils/variables.scss";
 
 .commercial {
-    background-color: #130b69;
+    background-color: $main-bg;
+    &__container {
+        max-width: 1500px;
+    }
+    .container {
+        max-width: 1450px;
+    }
 }
 
 .book-name {
     min-height: calc(100vh - 152px);
+    &__stepper-wrapper, .book-form  {
+        box-shadow: 0px 0px 30px -9px rgb(0 0 0 / 14%);
+    }
 }
