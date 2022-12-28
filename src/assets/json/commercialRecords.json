@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "id": "r1",
+      "commercialName": "مؤسسة خالد للسياحة متعددة الأنشطة",
+      "commercialStatus": "سجل قائم",
+      "commercialType": "سجل رئيسيى",
+      "isFavorite": true,
+      "isActive": true,
+      "isDeleted": false,
+      "commercialInfo": {
+        "type": "مؤسسة",
+        "expirationDate": "22/02/2021",
+        "uniformNumber": 143000,
+        "commercialNumber": 5435234
+      }
+    },
+    {
+      "id": "r2",
+      "commercialName": "مؤسسة سعد للسياحة نشاط فردى",
+      "commercialStatus": "سجل قائم",
+      "commercialType": "سجل رئيسيى",
+      "isFavorite": false,
+      "isActive": false,
+      "isDeleted": false,
+      "commercialInfo": {
+        "type": "مؤسسة",
+        "expirationDate": "22/02/2021",
+        "uniformNumber": 143000,
+        "commercialNumber": 5435234
+      }
+    },
+    {
+      "id": "r3",
+      "commercialName": "مؤسسة قاسم للسياحة ثنائية النشاط",
+      "commercialStatus": "مشطوب",
+      "commercialType": "سجل فرعى",
+      "isFavorite": false,
+      "isActive": false,
+      "isDeleted": true,
+      "commercialInfo": {
+        "type": "مؤسسة",
+        "expirationDate": "22/02/2021",
+        "uniformNumber": 143000,
+        "commercialNumber": 5435234
+      }
+    }
+  ]
+}

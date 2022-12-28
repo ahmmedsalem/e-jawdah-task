@@ -1,0 +1,44 @@
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../assets/sass/utils/variables.scss";
+
+.aside-wrapper {
+    background-color: $sidebar;
+    &__user {
+        &__info {
+            position: relative;
+            &::after{
+                content: '';
+                background-color: $white;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 5px;
+                width: 70px;
+            }
+        }
+    }
+    &__nav {
+        &__item {
+            transition: 0.3s ease-in-out;
+            &:hover {
+                color: $white;
+                background-color: $indigo-300;
+                a {
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+    &__lang-select {
+        color: $white;
+        background: transparent;
+        border: none;
+        & option {
+            color: $gray-800;
+            padding: 80px 0;
+            height: 90px;
+        }
+    }
+}

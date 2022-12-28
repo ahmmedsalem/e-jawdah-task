@@ -1,0 +1,17 @@
+.main-card__fav-btn:hover .bi::before, .main-card__fav-btn:active .bi::before, .main-card__fav-btn.active .bi::before {
+  content: '\F586';
+  color: #fff;
+}
+
+.main-card .bg-success {
+  background-color: #d1e7dd !important;
+}
+
+.main-card .badge.bg-success span:first-child {
+  color: #343a40;
+}
+
+.main-card .badge.bg-success span:nth-child(2) {
+  color: #198754;
+}
+/*# sourceMappingURL=MainCard.css.map */

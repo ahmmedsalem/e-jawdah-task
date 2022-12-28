@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Tajawal";
+  src: url("../../fonts/tajawal/Tajawal-Regular.ttf") format("truetype"), url("../../fonts/tajawal/Tajawal-Light.ttf") format("truetype"), url("../../fonts/tajawal/Tajawal-Bold.ttf") format("truetype"), url("../../fonts/tajawal/Tajawal-Medium.ttf") format("truetype"), url("../../fonts/tajawal/Tajawal-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+/*# sourceMappingURL=typography.css.map */

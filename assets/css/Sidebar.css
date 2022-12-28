@@ -1,0 +1,32 @@
+.aside-wrapper {
+  background-color: #6610f2;
+}
+
+.aside-wrapper__user__info {
+  position: relative;
+}
+
+.aside-wrapper__user__info::after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 5px;
+  width: 70px;
+}
+
+.aside-wrapper__nav__item {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.aside-wrapper__nav__item:hover {
+  color: #fff;
+  background-color: #a370f7;
+}
+
+.aside-wrapper__nav__item:hover a {
+  opacity: 1 !important;
+}
+/*# sourceMappingURL=Sidebar.css.map */

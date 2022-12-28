@@ -1,0 +1,20 @@
+.commercial-info [class*="commercial-info"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.commercial-info--name {
+  color: #6c757d;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.commercial-info--info {
+  font-weight: 500;
+  color: #212529;
+}
+/*# sourceMappingURL=MainCardInfo.css.map */

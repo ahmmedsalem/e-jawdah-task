@@ -1,0 +1,17 @@
+.records {
+  min-height: 100vh;
+}
+
+.records__tabs__item__link {
+  color: #343a40;
+  border: 1px solid #fff !important;
+  border-bottom: 5px solid #fff !important;
+}
+
+.records__tabs__item__link.active {
+  color: #343a40 !important;
+  background: #fff !important;
+  border: 1px solid #ced4da !important;
+  border-bottom: 5px solid #2b67ef !important;
+}
+/*# sourceMappingURL=CommercialRecords.css.map */

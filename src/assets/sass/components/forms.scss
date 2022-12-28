@@ -1,0 +1,13 @@
+.form-select {
+    width: auto;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &:focus-visible {
+        text-shadow: none;
+    }
+    -webkit-background-position: left 0.75rem center;
+    -moz-background-position: left 0.75rem center;
+    background-position: left 0.75rem center;
+}

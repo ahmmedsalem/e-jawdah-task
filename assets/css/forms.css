@@ -1,0 +1,17 @@
+.form-select {
+  width: auto;
+  -webkit-background-position: left 0.75rem center;
+  -moz-background-position: left 0.75rem center;
+  background-position: left 0.75rem center;
+}
+
+.form-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-select:focus-visible {
+  text-shadow: none;
+}
+/*# sourceMappingURL=forms.css.map */

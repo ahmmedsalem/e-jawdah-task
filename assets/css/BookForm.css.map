@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAEO,iBAFA,CACJ,KAAK,AACA,QAAQ,GAAG,KAAK,CAAC;EACd,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../../src/pages/BookCommercialName/BookForm/BookForm.scss"
+    ],
+    "names": [],
+    "file": "BookForm.css"
+}

@@ -1,0 +1,29 @@
+.btn-info, .btn-view {
+    font-size: 1.375rem;
+    min-height: 5rem;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.btn-info {
+    width: 12rem;
+}
+
+.btn-view {
+    width: 16rem;
+}
+
+.btn-outline-info {
+    &:not(:hover):not(:active):not(.active) {
+        background-color: $blue-100;
+        border-color: $blue-100;
+    }
+    &.active {
+        background-color: $info;
+        color: $white;
+    }
+}
+
+.btn-link {
+    color: $white;
+}

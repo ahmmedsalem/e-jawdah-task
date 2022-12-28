@@ -1,0 +1,4 @@
+.book-form__check input:checked + label {
+  font-weight: 700;
+}
+/*# sourceMappingURL=BookForm.css.map */

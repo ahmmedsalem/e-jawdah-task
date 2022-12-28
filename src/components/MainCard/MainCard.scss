@@ -1,0 +1,31 @@
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../assets/sass/utils/variables.scss";
+
+.main-card {
+    width: 98%;
+    &__fav-btn:hover,
+    &__fav-btn:active,
+    &__fav-btn.active {
+        .bi {
+            &::before {
+                content: '\F586';
+                color: #fff;
+            }
+        }
+    }
+    .bg-success {
+        background-color: $success-badge !important;
+    }
+    
+    .badge.bg-success {
+        span:first-child {
+            color: $gray-800;
+        }
+        span:nth-child(2) {
+            color: $green-400;
+    
+        }
+    }
+}
