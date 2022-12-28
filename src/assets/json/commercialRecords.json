@@ -5,7 +5,7 @@
       "commercialName": "مؤسسة خالد للسياحة متعددة الأنشطة",
       "commercialStatus": "سجل قائم",
       "commercialType": "سجل رئيسيى",
-      "isFavorite": true,
+      "isFavorite": false,
       "isActive": true,
       "isDeleted": false,
       "commercialInfo": {
@@ -20,7 +20,7 @@
       "commercialName": "مؤسسة سعد للسياحة نشاط فردى",
       "commercialStatus": "سجل قائم",
       "commercialType": "سجل رئيسيى",
-      "isFavorite": false,
+      "isFavorite": true,
       "isActive": false,
       "isDeleted": false,
       "commercialInfo": {

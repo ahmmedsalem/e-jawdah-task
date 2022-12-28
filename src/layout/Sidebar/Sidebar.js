@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { Context } from "../../components/Wrapper/Wrapper";
 import Logo from "../../assets/images/Logo.svg";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   const menuItems = require("../../assets/json/nav.json");
   const context = useContext(Context);
 
@@ -46,7 +46,7 @@ const Sidebar = (props) => {
       <div className="aside-wrapper__user px-30">
         <div className="d-flex justify-content-between mb-10">
           <p className="text-white fs-6">
-            <FormattedMessage id="sidebar.hello" defaultMessage="مرحباّ" />
+            <FormattedMessage id="sidebar.hello" defaultMessage="مرحباًَ" />
           </p>
           <select
             className="form-select aside-wrapper__lang-select"

@@ -8,9 +8,9 @@
     },
     {
       "id": "n2",
-      "name": "inbox",
+      "name": "incomingRequests",
       "link": "/",
-      "iconName": "bi-file-arrow-down-fill"
+      "iconName": "bi-files"
     },
     {
       "id": "n3",

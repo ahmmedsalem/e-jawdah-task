@@ -1,18 +1,17 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import CommercialList from "../../../components/CommercialList/CommercialList";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
-import { addRecord, deleteRecord } from "../../../redux/commercialsSlice";
+import { addRecord } from "../../../redux/commercialsSlice";
 import "./BookForm.scss";
 
 const BookForm = (props) => {
   const [enteredNameType, setEnteredNameType] = useState("");
-  const [enteredCommercialType, setEnteredCommercialType] = useState("");
-  const [enteredCommercialTypeFor, setEnteredCommercialTypeFor] = useState("");
+  const [enteredCommercialType, setEnteredCommercialType] = useState("مركز");
+  const [enteredCommercialTypeFor, setEnteredCommercialTypeFor] = useState("للتجارة");
   const [enteredCommercialName, setEnteredCommercialName] = useState("");
 
   const dispatch = useDispatch();
-
-  const recordsItems = useSelector((state) => state.records.items)
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -31,10 +30,10 @@ const BookForm = (props) => {
     setEnteredCommercialName("");
   };
 
-  const addRecordHandler = (e) => {
+  const addRecordHandler = e => {
     e.preventDefault();
-    if (enteredCommercialName.trim().length === 0) {
-      return
+    if (enteredCommercialName.trim().length === 0 ) {
+      return;
     }
     const commercialRecord = {
       id: Math.random().toString(),
@@ -44,7 +43,7 @@ const BookForm = (props) => {
       commercialName: enteredCommercialName,
     };
 
-    dispatch(addRecord(commercialRecord))
+    dispatch(addRecord(commercialRecord));
 
     setEnteredNameType("");
     setEnteredCommercialType("");
@@ -52,26 +51,23 @@ const BookForm = (props) => {
     setEnteredCommercialName("");
   };
 
-  const typeNameChangeHandler = (event) => {
-    setEnteredNameType(event.target.value);
+  const typeNameChangeHandler = e => {
+    setEnteredNameType(e.target.value);
   };
 
-  const commercialTypeChangeHandler = (event) => {
-    setEnteredCommercialType(event.target.value);
+  const commercialTypeChangeHandler = e => {
+    setEnteredCommercialType(e.target.value);
   };
 
-  const commercialTypeForChangeHandler = (event) => {
-    setEnteredCommercialTypeFor(event.target.value);
+  const commercialTypeForChangeHandler = e => {
+    setEnteredCommercialTypeFor(e.target.value);
   };
-  const commercialNameChangeHandler = (event) => {
-    setEnteredCommercialName(event.target.value);
+  const commercialNameChangeHandler = e => {
+    setEnteredCommercialName(e.target.value);
   };
 
   return (
-    <form
-      onSubmit={submitHandler}
-      className="book-form bg-white mt-20 p-25"
-    >
+    <form onSubmit={submitHandler} className="book-form bg-white mt-20 p-25">
       <SectionHeader title={"الاسم التجارى"} color={"#212529"}></SectionHeader>
 
       {/* Checkboxes */}
@@ -89,7 +85,7 @@ const BookForm = (props) => {
             id="flexRadioDefault1"
             value={"special"}
             checked={enteredNameType === "special"}
-            onChange={(e) => { }}
+            onChange={e => {}}
           />
           <label className="form-check-label me-30" htmlFor="flexRadioDefault1">
             اسم خاص
@@ -104,7 +100,7 @@ const BookForm = (props) => {
             id="flexRadioDefault2"
             value={"recommended"}
             checked={enteredNameType === "recommended"}
-            onChange={(e) => { }}
+            onChange={e => {}}
           />
           <label className="form-check-label me-30" htmlFor="flexRadioDefault2">
             اسم مقترح
@@ -195,8 +191,8 @@ const BookForm = (props) => {
               className="form-control p-10 w-200"
               type="text"
               minLength={5}
-              id="commercialName"
               maxLength={50}
+              id="commercialName"
               required
               value={enteredCommercialName}
               onChange={commercialNameChangeHandler}
@@ -216,29 +212,7 @@ const BookForm = (props) => {
       </div>
 
       <div className="row">
-        {recordsItems.length > 0 &&
-          recordsItems.map(item =>
-            <div className="col-6" key={item.id}>
-              <div className="record-card p-15 py-20 my-15">
-                <div className="record-card__header d-flex">
-                  <p className="text-white">
-                    الأسم التجاري
-                  </p>
-                  <button 
-                    className="record-card__button text-white mt-0 p-0" 
-                    onClick={() => dispatch(deleteRecord({ id: item.id }))}
-                  >
-                    حذف
-                    <i className="bi bi-x-lg m-5"></i>
-                  </button>
-                </div>
-                <h5 className="record-card__content text-white">
-                  {item.commercialType} {item.commercialName} {item.commercialTypeFor}
-                </h5>
-              </div>
-            </div>
-          )
-        }
+        <CommercialList />
       </div>
 
       <button className="btn btn-info btn-lg me-auto d-block" type="submit">

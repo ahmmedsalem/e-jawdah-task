@@ -1,5 +1,5 @@
 {
-  "sidebar.hello": "مرحباّ",
+  "sidebar.hello": "مرحباً",
   "sidebar.user": "أحمد خالد الغامدى القحطاني",
   "sidebar.electronicServices": "الخدمات الالكترونية",
   "sidebar.otherLinks": "روابط اخري",
@@ -9,7 +9,7 @@
   "commercial.instituteslogs": "عدد سجلات المؤسسات",
   "commercial.favlogs": "السجلات المفضلة",
   "mainNav.home": "الرئيسية",
-  "mainNav.inbox": "الطلبات الواردة",
+  "mainNav.incomingRequests": "الطلبات الواردة",
   "mainNav.myorder": "طلباتي",
   "mainNav.addresslogs": "سجل العناوين",
   "mainNav.authorizations": "التفاويض",

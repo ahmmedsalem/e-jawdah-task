@@ -5,6 +5,7 @@ import Navbar from "../../layout/Navbar/Navbar";
 import "./BookCommercialName.scss";
 import BookForm from "./BookForm/BookForm";
 import { Link } from "react-router-dom";
+import Footer from "../../layout/Footer/Footer";
 
 const BookCommercialName = () => {
   const [nextStep, setnextStep] = useState("1");
@@ -71,6 +72,7 @@ const BookCommercialName = () => {
                 </div>
             </div>
         </div>
+        <Footer />
     </div>
   );
 };
