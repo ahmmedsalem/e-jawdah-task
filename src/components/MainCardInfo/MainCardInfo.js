@@ -11,7 +11,7 @@ const MainCardInfo = (props) => {
                     <p className="commercial-info--name mb-5">
                          <FormattedMessage id="instituteType.name" defaultMessage="نوع الكيان التجارى" />
                     </p>
-                    <p className="commercial-info--info me-3">{props.info.type}</p>
+                    <p className="commercial-info--info me-3 mt-10">{props.info.type}</p>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@ const MainCardInfo = (props) => {
                         <p className="commercial-info--name mb-5 me-5">
                             <FormattedMessage id="recordExpirationDate.name" defaultMessage="تاريخ الانتهاء" />
                         </p>
-                        <p className="commercial-info--info me-3">{props.info.expirationDate}</p>
+                        <p className="commercial-info--info me-3 mt-10">{props.info.expirationDate}</p>
                     </div>
                 </div>
             </div>   
@@ -35,7 +35,7 @@ const MainCardInfo = (props) => {
                         <p className="commercial-info--name mb-5 me-5">
                             <FormattedMessage id="recordUniformNumber.name" defaultMessage="الرقم الموحد للمنشأة" />
                         </p>
-                        <p className="commercial-info--info me-3">{props.info.uniformNumber}</p>
+                        <p className="commercial-info--info me-3 mt-10">{props.info.uniformNumber}</p>
                     </div>
                 </div>
             </div>   
@@ -48,7 +48,7 @@ const MainCardInfo = (props) => {
                         <p className="commercial-info--name mb-5 me-5">
                             <FormattedMessage id="recordCommercialNumber.name" defaultMessage="رقم السجل التجارى" />
                         </p>
-                        <p className="commercial-info--info me-3">{props.info.commercialNumber}</p>
+                        <p className="commercial-info--info me-3 mt-10">{props.info.commercialNumber}</p>
                     </div>
                 </div>
             </div>      
