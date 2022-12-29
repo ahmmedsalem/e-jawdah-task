@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
-import commercialRecords from '../assets/json/commercialRecords.json'
+// import commercialRecords from '../assets/json/commercialRecords.json'
 
 
 export const commercialsSlice = createSlice({
   name: 'commercials',
   initialState: {
-    items: commercialRecords.records
+    items: []
   },
   reducers: {
     addRecord: function(state, action) {

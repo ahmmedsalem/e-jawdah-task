@@ -1,0 +1,24 @@
+@import url("../../assets/sass/utils/variables.scss");
+
+.wide-card {
+    width: 100%;
+    height: 225px;
+    background-color: #eef2f9;
+    border: 1px solid #bed0f9;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__edit {
+        button {
+            background: transparent;
+            border: none;
+        }
+    }    
+    .inner-card {
+        min-height: 88px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

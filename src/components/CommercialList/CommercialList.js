@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteRecord } from '../../redux/commercialsSlice';
 
 import { AnimatePresence, motion } from "framer-motion";
+import "./CommercialList.scss"
 
 
 const CommercialList = () => {
@@ -27,7 +28,7 @@ const CommercialList = () => {
               <div className="record-card p-15 py-20 mt-10 mb-5">
                 <div className="record-card__header d-flex">
                   <p className="text-white">
-                    الأسم التجاري
+                    الاسم التجاري الكامل
                   </p>
                   <button 
                     className="record-card__button text-white mt-0 p-0" 
