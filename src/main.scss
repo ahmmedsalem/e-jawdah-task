@@ -5,6 +5,7 @@
 @import "assets/sass/components/headers";
 @import "assets/sass/components/forms";
 @import "assets/sass/base/typography";
+@import "assets/sass/base/ltr";
 
 * {
   font-family: "Tajawal";
@@ -23,4 +24,8 @@ html,
 body {
   display: block;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }

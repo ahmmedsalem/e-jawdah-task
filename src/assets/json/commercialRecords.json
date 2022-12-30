@@ -45,5 +45,70 @@
         "commercialNumber": 10232102
       }
     }
+  ],
+  "licenses": [
+    {
+      "id": "l1",
+      "licenseName": "الشركة السعودية للكهرباء",
+      "icon": "l1.png",
+      "licenseStats": {
+        "dueAmout": 7342.55,
+        "licensesCount": 121
+      }
+    },
+    {
+      "id": "l2",
+      "licenseName": "الشركة المياه الوطنية",
+      "icon": "l2.png",
+      "licenseStats": {
+        "dueAmout": 2550.55,
+        "licensesCount": 138
+      }
+    },
+    {
+      "id": "l3",
+      "licenseName": "الشركة الاتصالات السعودية",
+      "icon": "l3.png",
+      "licenseStats": {
+        "dueAmout": 9120.87,
+        "licensesCount": 98
+      }
+    },
+    {
+      "id": "l4",
+      "licenseName": "الهيئة السعودية للبيانات",
+      "icon": "l4.png",
+      "licenseStats": {
+        "dueAmout": 7342.55,
+        "licensesCount": 110
+      }
+    },
+    {
+      "id": "l5",
+      "licenseName": "هيئة نوكلنا",
+      "icon": "l5.png",
+      "licenseStats": {
+        "dueAmout": 7342.21,
+        "licensesCount": 121
+      }
+    },
+    {
+      "id": "l6",
+      "licenseName": "المنصة الوطنية الموحدة",
+      "icon": "l6.png",
+      "licenseStats": {
+        "dueAmout": 3142.31,
+        "licensesCount": 121
+      }
+    },
+    {
+      "id": "l7",
+      "licenseName": "المركز السعودي للأعمال",
+      "icon": "l7.png",
+      "licenseStats": {
+        "dueAmout": 4100.50,
+        "licensesCount": 220
+      }
+    }
   ]
 }

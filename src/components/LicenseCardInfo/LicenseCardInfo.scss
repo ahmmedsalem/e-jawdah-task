@@ -1,0 +1,19 @@
+@import "../../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+@import "../../assets/sass/utils/variables.scss";
+
+.license-info {
+  &__name {
+    color: $gray-600;
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+
+  &__badge {
+    background-color: $success-badge !important;
+    color: $success;
+    width: 100px;
+    font-size: 14px;
+  }
+}

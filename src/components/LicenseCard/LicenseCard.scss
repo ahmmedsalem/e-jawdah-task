@@ -1,0 +1,14 @@
+.license-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__icon {
+    height: 32px;
+    width: auto;
+  }
+}
+

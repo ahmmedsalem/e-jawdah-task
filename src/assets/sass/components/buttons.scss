@@ -13,6 +13,12 @@
     width: 16rem;
 }
 
+.btn-cancel {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+}
+
 .btn-outline-info {
     &:not(:hover):not(:active):not(.active) {
         background-color: $blue-100;

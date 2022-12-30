@@ -20,6 +20,10 @@
   "otherLinks.electronicServices" : "Electronic Services",
   "otherLinks.contactUs" : "Contact Us",
 
+  "links.contactUs" : "Contact Us",
+  "links.eServices" : "eServices",
+  "links.iPortal" : "Investor Portal",
+
   "record.title": "",
   "recordStatus.name": "Record Status",
   "recordType.name": "Record Type",
@@ -27,5 +31,46 @@
   "recordExpirationDate.name": "Expiration Date",
   "recordUniformNumber.name": "Uniform Number",
   "recordCommercialNumber.name": "Commercial Number",
-  "viewRecord": "View Record"
+  "viewRecord": "View Record",
+
+  "license.dueAmount": "Due Amount",
+  "license.licensesCount": "Total licenses",
+
+  "currency.sar": "SAR",
+
+  "bookCommercialName.title": "Book Commercial Name Request",
+  "serviceBeneficiary.title": "Determine the Beneficiary of the Service",
+  "bookCommercialName.step1": "Request Form",
+  "bookCommercialName.step2": "Sending the Request",
+  "commercialActivities.title": "Commercial Activities",
+  "button.edit": "Edit",
+  "commercialName.name": "Commercial Name",
+  "commercialNameType.label": "Select the type of trade name",
+  "commercialNameType.customOption": "Custom Name",
+  "commercialNameType.suggestedOption": "Suggested Name",
+  "commercialType.title": "Choose the previous word and the next word that will be added to the trade name",
+  "commercialType.prev.label": "Establishment type 'previous word'",
+  "commercialType.prev.option1": "Center",
+  "commercialType.prev.option2": "Firm",
+  "commercialType.prev.option3": "Store",
+  "commercialType.prev.option4": "Corporate",
+  "commercialType.suff.label": "Establishment type 'suffix word'",
+  "commercialType.suff.option1": "For Trading",
+  "commercialType.suff.option2": "For Industry",
+  "commercialType.suff.option3": "For Information Technology",
+  "commercialType.suff.option4": "For Engineering Management",
+  "exampleCard.label": "Example of a business name format",
+  "exampleCard.prev.name": "Previous Word",
+  "exampleCard.center": "Center",
+  "exampleCard.entity.name": "Entity Name",
+  "exampleCard.project.ownerName": "Project Name",
+  "exampleCard.suffix.name": "Suffix Name",
+  "exampleCard.suffix.trading": "For Trading",
+  "commercialName.label": "Project Owner Name 'entity Name'",
+  "button.addName": "Add Name",
+  "button.next": "Next",
+  "success.message": "Commercial Name has been Booked Successfully",
+  "button.goToList": "See All Commercial Records",
+  "button.back": "Back to Previous Step"
+
 }

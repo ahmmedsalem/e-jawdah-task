@@ -2,7 +2,7 @@
 
 .wide-card {
     width: 100%;
-    height: 225px;
+    height: 235px;
     background-color: #eef2f9;
     border: 1px solid #bed0f9;
     &__header {
@@ -16,7 +16,7 @@
         }
     }    
     .inner-card {
-        min-height: 88px;
+        min-height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;

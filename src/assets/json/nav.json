@@ -74,17 +74,17 @@
   "links": [
     {
       "id": "l1",
-      "name": "منصة الأعمال",
+      "name": "iPortal",
       "link": "/"
     },
     {
       "id": "l2",
-      "name": "الخدمات الإلكترونية",
+      "name": "eServices",
       "link": "/"
     },
     {
       "id": "l3",
-      "name": "تواصل معنا",
+      "name": "contactUs",
       "link": "/"
     }
   ],
