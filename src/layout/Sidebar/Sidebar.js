@@ -49,7 +49,7 @@ const Sidebar = () => {
             <FormattedMessage id="sidebar.hello" defaultMessage="مرحباًَ" />
           </p>
           <select
-            className="form-select"
+            className="form-select text-center"
             value={context.locale}
             onChange={context.selectLanguage}
           >
@@ -68,7 +68,7 @@ const Sidebar = () => {
             />
           </span>
           <button className="btn btn-link fs-5">
-            <i className="bi bi-box-arrow-left"></i>
+            <i className={`bi bi-box-arrow-${context.locale==="en"?"right":"left"}`}></i>
           </button>
         </p>
       </div>

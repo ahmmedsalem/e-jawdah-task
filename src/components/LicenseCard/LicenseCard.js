@@ -4,7 +4,7 @@ import "./LicenseCard.scss";
 const LicenseCard = (props) => {
   return (
     <div className="col-4">
-      <div className="license-card card p-25 mb-25">
+      <div className="license-card card p-25 mb-15">
         <header className="license-card__header">
           <h5 className="mb-10 fw-bold">{props.item.licenseName}</h5>
           <img

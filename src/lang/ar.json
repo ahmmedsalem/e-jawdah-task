@@ -38,6 +38,10 @@
 
   "currency.sar": "ريال",
 
+  "beneficiary.authorized": "مفوض عن مالك المؤسسة",
+  "beneficiary.category": "فئة الأسم التجاري",
+  "activites.title": "الانشطة المختارة",
+  "button.cancel": "إلغاء الطلب",
   "bookCommercialName.title": "طلب حجز اسم تجارى",
   "serviceBeneficiary.title": "تحديد المستفيد من الخدمة",
   "bookCommercialName.step1": "ادخال بيانات الطلب",

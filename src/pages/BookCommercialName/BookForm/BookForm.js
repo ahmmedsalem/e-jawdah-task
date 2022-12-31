@@ -12,7 +12,7 @@ import "./BookForm.scss";
 
 const BookForm = (props) => {
   const context = useContext(Context);
-  
+
   const [enteredNameType, setEnteredNameType] = useState("");
   const [enteredCommercialType, setEnteredCommercialType] = useState("مركز");
   const [enteredCommercialTypeFor, setEnteredCommercialTypeFor] =
@@ -121,7 +121,7 @@ const BookForm = (props) => {
               id="flexRadioDefault2"
               value={"recommended"}
               checked={enteredNameType === "recommended"}
-              onChange={e => {}}
+              onChange={(e) => {}}
             />
             <label
               className="form-check-label me-5"
@@ -334,7 +334,11 @@ const BookForm = (props) => {
           className="btn-cancel me-auto d-block my-25 mb-50"
           type="submit"
         >
-          <i className="bi bi-x-lg text-danger"></i> الغاء الطلب
+          <i className="bi bi-x-lg text-danger mx-5"></i>
+          <FormattedMessage
+            id="button.cancel"
+            defaultMessage="إلغاء الطلب"
+          ></FormattedMessage>
         </button>
       </Link>
     </>

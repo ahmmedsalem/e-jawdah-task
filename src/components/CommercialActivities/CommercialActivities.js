@@ -11,7 +11,12 @@ const CommercialActivities = () => {
         ></FormattedMessage>
       }
     >
-      <p className="fw-bold">الأنشطة المختارة</p>
+      <p className="fw-bold">
+        <FormattedMessage
+          id="activites.title"
+          defaultMessage="الانشطة المختارة"
+        ></FormattedMessage>
+      </p>
       <div className="col-3">
         <div className="inner-card bg-white p-10 shadow-sm hover:shadow-none">
           <p className="fw-bold">

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../../components/Wrapper/Wrapper";
 import { FormattedMessage } from "react-intl";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Logo from "../../assets/images/Logo.svg";
 
@@ -35,15 +36,15 @@ const Navbar = () => {
             {links.links.map((link) => {
               return (
                 <li className="list-inline-item ms-30" key={link.id}>
-                  <a
+                  <Link
                     className="text-white text-decoration-none"
-                    href={link.link}
+                    to={link.link}
                   >
                     <FormattedMessage
                       id={`links.${link.name}`}
                       defaultMessage={link.name}
                     />
-                  </a>
+                  </Link>
                 </li>
               );
             })}

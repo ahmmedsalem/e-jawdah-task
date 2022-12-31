@@ -38,6 +38,10 @@
 
   "currency.sar": "SAR",
 
+  "beneficiary.authorized": "Authorized by the owner of the entity",
+  "beneficiary.category": "Commercial Name Category",
+  "activites.title": "Choosen Activities",
+  "button.cancel": "Cancel Request",
   "bookCommercialName.title": "Book Commercial Name Request",
   "serviceBeneficiary.title": "Determine the Beneficiary of the Service",
   "bookCommercialName.step1": "Request Form",
@@ -64,7 +68,7 @@
   "exampleCard.center": "Center",
   "exampleCard.entity.name": "Entity Name",
   "exampleCard.project.ownerName": "Project Name",
-  "exampleCard.suffix.name": "Suffix Name",
+  "exampleCard.suffix.name": "Suffix Word",
   "exampleCard.suffix.trading": "For Trading",
   "commercialName.label": "Project Owner Name 'entity Name'",
   "button.addName": "Add Name",
