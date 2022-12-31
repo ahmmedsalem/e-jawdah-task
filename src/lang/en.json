@@ -29,7 +29,7 @@
   "recordType.name": "Record Type",
   "instituteType.name": "Commercial Institutions Type",
   "recordExpirationDate.name": "Expiration Date",
-  "recordUniformNumber.name": "Uniform Number",
+  "recordUniformNumber.name": "Unified Number of the entity",
   "recordCommercialNumber.name": "Commercial Number",
   "viewRecord": "View Record",
 
@@ -75,6 +75,7 @@
   "button.next": "Next",
   "success.message": "Commercial Name has been Booked Successfully",
   "button.goToList": "See All Commercial Records",
-  "button.back": "Back to Previous Step"
-
+  "button.back": "Back to Previous Step",
+  "sdaia.copyrights": "Developed by the Saudi Authority for Data and Artificial Intelligence",
+  "app.copyrights": "All rights reserved to the Saudi Center for Economic Business"
 }

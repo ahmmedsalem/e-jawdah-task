@@ -18,7 +18,7 @@ const CommercialRecords = () => {
     setActive(tab.id);
     let filteredItems = allRecords.records.filter((item) => {
       if (tab.id === "t2") {
-        return item.commercialType === "سجل فرعى";
+        return item.commercialType === "سجل فرعي";
       } else if (tab.id === "t3") {
         return item.commercialInfo.type === "مؤسسة";
       } else if (tab.id === "t4") {

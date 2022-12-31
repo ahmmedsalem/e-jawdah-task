@@ -49,7 +49,7 @@ const Sidebar = () => {
             <FormattedMessage id="sidebar.hello" defaultMessage="مرحباًَ" />
           </p>
           <select
-            className="form-select"
+            className="form-select w-25"
             value={context.locale}
             onChange={context.selectLanguage}
           >
