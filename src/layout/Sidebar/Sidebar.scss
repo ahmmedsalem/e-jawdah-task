@@ -31,14 +31,4 @@
             }
         }
     }
-    &__lang-select {
-        color: $white;
-        background: transparent;
-        border: none;
-        & option {
-            color: $gray-800;
-            padding: 80px 0;
-            height: 90px;
-        }
-    }
 }

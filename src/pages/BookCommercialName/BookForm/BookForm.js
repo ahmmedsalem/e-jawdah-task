@@ -319,7 +319,7 @@ const BookForm = (props) => {
         <div className="row">
           <CommercialList />
         </div>
-        <div class="d-flex flex-row-reverse">
+        <div className="d-flex flex-row-reverse">
           <button className="btn btn-info btn-lg d-block" type="submit">
             <FormattedMessage
               id="button.next"
