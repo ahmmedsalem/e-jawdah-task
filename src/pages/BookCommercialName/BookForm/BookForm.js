@@ -38,8 +38,7 @@ const BookForm = (props) => {
     setEnteredCommercialName("");
   };
 
-  const addRecordHandler = (e) => {
-    // e.preventDefault();
+  const addRecordHandler = () => {
     if (enteredCommercialName.trim().length === 0) {
       return;
     }

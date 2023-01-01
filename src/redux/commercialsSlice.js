@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-// import commercialRecords from '../assets/json/commercialRecords.json'
 
 
 export const commercialsSlice = createSlice({
