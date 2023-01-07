@@ -12,11 +12,10 @@ import "./BookForm.scss";
 
 const BookForm = (props) => {
   const context = useContext(Context);
-
   const [enteredNameType, setEnteredNameType] = useState("");
-  const [enteredCommercialType, setEnteredCommercialType] = useState("مركز");
+  const [enteredCommercialType, setEnteredCommercialType] = useState("commercialType.prev.option1");
   const [enteredCommercialTypeFor, setEnteredCommercialTypeFor] =
-    useState("للتجارة");
+    useState("commercialType.suff.option1");
   const [enteredCommercialName, setEnteredCommercialName] = useState("");
 
   const dispatch = useDispatch();
@@ -155,28 +154,24 @@ const BookForm = (props) => {
                 id="commercialType"
                 required
               >
-                <option defaultValue value={"مركز"}>
+                <option defaultValue value={"commercialType.prev.option1"}>
                   <FormattedMessage
                     id="commercialType.prev.option1"
-                    defaultMessage="مركز"
                   ></FormattedMessage>
                 </option>
-                <option value={"مؤسسة"}>
+                <option value={"commercialType.prev.option2"}>
                   <FormattedMessage
                     id="commercialType.prev.option2"
-                    defaultMessage="مؤسسة"
                   ></FormattedMessage>
                 </option>
-                <option value={"متجر"}>
+                <option value={"commercialType.prev.option3"}>
                   <FormattedMessage
                     id="commercialType.prev.option3"
-                    defaultMessage="متجر"
                   ></FormattedMessage>
                 </option>
-                <option value={"شركة"}>
+                <option value={"commercialType.prev.option4"}>
                   <FormattedMessage
                     id="commercialType.prev.option4"
-                    defaultMessage="شركة"
                   ></FormattedMessage>
                 </option>
               </select>
@@ -197,25 +192,25 @@ const BookForm = (props) => {
                 onChange={commercialTypeForChangeHandler}
                 required
               >
-                <option defaultValue value={"للتجارة"}>
+                <option defaultValue value={"commercialType.suff.option1"}>
                   <FormattedMessage
                     id="commercialType.suff.option1"
                     defaultMessage="للتجارة"
                   ></FormattedMessage>
                 </option>
-                <option value={"للصناعة"}>
+                <option value={"commercialType.suff.option2"}>
                   <FormattedMessage
                     id="commercialType.suff.option2"
                     defaultMessage="للصناعة"
                   ></FormattedMessage>
                 </option>
-                <option value={"لتكنولوجيا المعلومات"}>
+                <option value={"commercialType.suff.option3"}>
                   <FormattedMessage
                     id="commercialType.suff.option3"
                     defaultMessage="لتكنولوجيا المعلومات"
                   ></FormattedMessage>
                 </option>
-                <option value={"للإدارة الهندسية"}>
+                <option value={"commercialType.suff.option4"}>
                   <FormattedMessage
                     id="commercialType.suff.option4"
                     defaultMessage="للإدارة الهندسية"
@@ -243,8 +238,8 @@ const BookForm = (props) => {
                 </p>
                 <h2>
                   <FormattedMessage
-                    id="exampleCard.center"
-                    defaultMessage="مركز"
+                    id={enteredCommercialType}
+                    defaultMessage={enteredCommercialType}
                   ></FormattedMessage>
                 </h2>
               </div>
@@ -256,10 +251,10 @@ const BookForm = (props) => {
                   ></FormattedMessage>
                 </p>
                 <h2>
-                  <FormattedMessage
-                    id="exampleCard.project.ownerName"
+                  {enteredCommercialName.trim().length !== 0 ?  enteredCommercialName : <FormattedMessage
+                    id={"exampleCard.project.ownerName"}
                     defaultMessage="اسم مالك المشروع"
-                  ></FormattedMessage>
+                  ></FormattedMessage>}
                 </h2>
               </div>
               <div className="card-example__column">
@@ -271,8 +266,8 @@ const BookForm = (props) => {
                 </p>
                 <h2>
                   <FormattedMessage
-                    id="exampleCard.suffix.trading"
-                    defaultMessage="للتجارة"
+                    id={enteredCommercialTypeFor}
+                    defaultMessage={enteredCommercialTypeFor}
                   ></FormattedMessage>
                 </h2>
               </div>

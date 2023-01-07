@@ -42,8 +42,14 @@ const CommercialList = () => {
                   </button>
                 </div>
                 <h5 className="record-card__content text-white">
-                  {item.commercialType} {item.commercialName}{" "}
-                  {item.commercialTypeFor}
+                <FormattedMessage
+                    id={item.commercialType}
+                    defaultMessage={item.commercialType}
+                  ></FormattedMessage>  {item.commercialName}{" "}
+                  <FormattedMessage
+                    id={item.commercialTypeFor}
+                    defaultMessage={item.commercialTypeFor}
+                  ></FormattedMessage>
                 </h5>
               </div>
             </motion.div>

@@ -49,14 +49,14 @@ const Sidebar = () => {
             <FormattedMessage id="sidebar.hello" defaultMessage="مرحباًَ" />
           </p>
           <select
-            className="form-select w-25"
+            className="form-select w-25  bg-transparent border-0 text-white font-bold"
             value={context.locale}
             onChange={context.selectLanguage}
           >
-            <option defaultValue value="ar">
+            <option className="text-black" defaultValue value="ar">
               AR
             </option>
-            <option value="en">EN</option>
+            <option className="text-black" value="en">EN</option>
           </select>
         </div>
         <p className="aside-wrapper__user__info text-white fs-5 pb-5 d-flex justify-content-between">
